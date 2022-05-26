@@ -8,18 +8,16 @@
     <style>
       #box {
         width: 70%;
-        height: 500px;
-        border: 1px solid;
+        height: 450px;
         display: grid;
+        gap: 50px 20px;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 50px);
-        gap: 25px;
+        grid-template-rows: 100px 100px 100px;
         margin: 100px auto;
-        grid-template-areas: 
+        grid-template-areas:
           "b1 b2 b2 b3"
-          "b1 b1 b2 b3"
-          "b1 b2 b3 b3"
-        ;
+          "b4 b4 b5 b6"
+          "b7 b8 b9 b9";
       }
       #box > div {
         background-color: teal;
@@ -27,7 +25,7 @@
         border-radius: 10px;
       }
       #box > div:nth-child(1) {
-          grid-area: b1;
+        grid-area: b1;
       }
       #box > div:nth-child(2) {
         grid-area: b2;
@@ -35,14 +33,37 @@
       #box > div:nth-child(3) {
         grid-area: b3;
       }
-      
+      #box > div:nth-child(4) {
+        grid-area: b4;
+      }
+      #box > div:nth-child(5) {
+        grid-area: b5;
+      }
+      #box > div:nth-child(6) {
+        grid-area: b6;
+      }
+      #box > div:nth-child(7) {
+        grid-area: b7;
+      }
+      #box > div:nth-child(8) {
+        grid-area: b8;
+      }
+      #box > div:nth-child(9) {
+        grid-area: b9;
+      }
     </style>
   </head>
   <body>
     <div id="box">
-      <div>A</div>
-      <div>B</div>
-      <div>C</div>      
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </body>
 </html>
